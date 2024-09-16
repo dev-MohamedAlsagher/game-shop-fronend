@@ -1,0 +1,120 @@
+.cart-container {
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  z-index: 1000;
+  min-height: 50px;
+  max-height: 50%;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.details {
+  display: flex;
+  align-content: space-between;
+}
+
+.quantity-container {
+  display: flex;
+}
+
+.quantity {
+  align-self: center;
+}
+
+.naam {
+  margin-right: 15%;
+}
+
+.prijs {
+  padding-top: 10px;
+  margin-left: auto;
+}
+
+
+.TotaalPrijs {
+  display: flex;
+}
+
+.TotaalPrijs button{
+  margin-left: auto;
+}
+
+.TotaalPrijs p{
+  margin: 0;
+  
+}
+
+.cart-container.open {
+  display: block;
+}
+
+.cart {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  align-items: center;
+  grid-gap: 10px;
+}
+
+.cart h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  text-align: left;
+  grid-column: span 4;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  grid-column: span 4;
+}
+
+.cart li {
+  margin: 5px 0;
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  grid-gap: 10px;
+  border-bottom: 1px solid #ccc; 
+  padding-bottom: 5px;
+}
+
+.cart button {
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-size: 1rem;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.cart .total {
+  font-weight: bold;
+  text-align: right;
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  align-items: center;
+  grid-gap: 10px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+  .cart {
+    grid-template-columns: 1fr auto auto;
+  }
+
+  .cart .total {
+    grid-template-columns: 3fr 1fr;
+  }
+}

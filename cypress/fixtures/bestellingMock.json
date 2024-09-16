@@ -1,0 +1,25 @@
+[
+  {
+    "id": 1,
+    "userID": 2,
+    "createdAt": "2023-12-20T16:52:53.000Z",
+    "games": [
+      {
+        "gameName": "Rust",
+        "quantity": 1,
+        "price": 39.99
+      },
+      {
+        "gameName": "Fifa 23",
+        "quantity": 1,
+        "price": 20
+      },
+      {
+        "gameName": "Minecraft",
+        "quantity": 1,
+        "price": 20
+      }
+    ],
+    "totaalbedrag": 79.99
+  }
+]

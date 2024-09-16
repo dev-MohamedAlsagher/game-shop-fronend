@@ -1,0 +1,98 @@
+.nav-links {
+  display: flex;
+}
+
+.nav-rechts {
+  margin-left: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  background-color: rgb(16, 167, 218);
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0;
+  position: relative;
+}
+
+nav ul li a {
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s;
+  position: relative;
+}
+
+nav ul li a:hover {
+  background-color: green;
+  border-radius: 5px;
+}
+
+nav a.active {
+  color: darkblue;
+}
+
+nav ul li button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+}
+
+nav ul li button:hover {
+  background-color: green;
+}
+
+.nav-links .dropdown-container {
+  position: relative;
+}
+
+.nav-links .dropdown-container button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 16px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  position: relative;
+}
+
+.nav-links .dropdown-content {
+  display: block;
+  position: absolute;
+  background-color: rgb(16, 167, 218);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  right: 0;
+  top: 100%;
+}
+
+.nav-links .dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+.nav-links .dropdown-content a {
+  padding: 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-links .dropdown-content a:hover {
+  background-color: darkblue;
+}

@@ -1,0 +1,10 @@
+{
+  "status": "error",
+  "message": "Registration failed due to validation errors",
+  "errors": {
+    "username": ["Username is already taken"],
+    "email": ["Email address is not valid", "The given email already exists"],
+    "password": ["Password must contain at least 6 characters"],
+    "confirmPassword": ["Passwords komen niet overreen"]
+  }
+}
